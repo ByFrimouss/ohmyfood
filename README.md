@@ -77,15 +77,18 @@ ohmyfood/
 │
 ├── assets/ ← Fichiers statiques (visuels, styles compilés, icônes)
 │ ├── images/  
-│ │ ├── logo.svg
-│ │ ├── restaurant-1.jpg
-│ │ └── ...
-│ └── css/
-│ └── style.css ← Fichier CSS généré à partir de Sass
+│ │ ├── logo
+| | | |── ohmyfood.png
+| | | |── ohmyfood@2x.svg
+│ │ ├── restaurants
+| | | |── jay-wennington-N_Y88TWmGwA-unsplash.jpg
+| | | |── louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg
+| | | |── stil-u2Lp8tXIcjw-unsplash.jpg
+| | | |── toa-heftiba-DQKerTsQwi0-unsplash.jpg
+│ |── style.css ← Fichier CSS généré à partir de Sass
 │
 ├── sass/ ← Source SASS, organisé façon modulaire
 │ ├── base/
-│ │ ├── \_reset.scss
 │ │ ├── \_typography.scss
 │ │ └── \_animations.scss
 │ ├── components/
@@ -95,7 +98,6 @@ ohmyfood/
 │ ├── layout/
 │ │ ├── \_header.scss
 │ │ ├── \_footer.scss
-│ │ ├── \_grid.scss
 │ │ └── \_responsive.scss
 │ ├── pages/
 │ │ ├── \_home.scss
@@ -122,4 +124,5 @@ Ce projet est réalisé dans un cadre pédagogique. Les contributions ne sont pa
 ## 🧾 Licence
 
 Ce projet est fictif et réalisé dans le cadre d’une formation. Toute ressemblance avec une entreprise existante est purement... intentionnelle 😄
+
 # ohmyfood
