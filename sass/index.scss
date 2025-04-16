@@ -1,0 +1,107 @@
+//// DESIGN SYSTEM /////
+
+// Couleurs
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$background-grey: #f6f6f6;
+$text-dark: #000;
+$text-light: #888;
+$white: #fff;
+$grey: #eaeaea;
+
+// Typo
+$font-title: "Shrikhand", cursive;
+$font-text: "Roboto", sans-serif;
+
+////// BASE /////
+
+body {
+  font-family: $font-text;
+  margin: 0;
+  color: $text-dark;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: $font-title;
+}
+
+.header {
+  text-align: center;
+
+  h1 img {
+    width: 160px;
+    height: 30px;
+  }
+}
+
+.location {
+  padding: 15px;
+  margin-top: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $grey;
+  box-shadow: rgba(0, 0, 0, 0.25) 4px 2px 4px 4px;
+
+  i {
+    margin-right: 8px;
+  }
+
+  span {
+    font-weight: 500;
+  }
+}
+
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+
+  h2 {
+    font-size: 22px;
+  }
+
+  p {
+    margin: 10px 0 20px;
+  }
+}
+
+.workflow-section h2 {
+  margin-left: 20px;
+}
+
+.workflow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: $background-grey;
+  border-radius: 15px;
+  padding: 20px 10px;
+  margin: 0 35px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+
+  span {
+    font-weight: 500;
+  }
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: $primary-color;
+  border-radius: 50%;
+  margin-left: 20px;
+  z-index: 10;
+}

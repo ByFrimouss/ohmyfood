@@ -1,5 +1,101 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: #000;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
 h1 {
-  color: brown;
+  font-family: "Shrikhand", cursive;
+}
+
+.header {
+  text-align: center;
+}
+.header h1 img {
+  width: 160px;
+  height: 30px;
+}
+
+.location {
+  padding: 15px;
+  margin-top: -15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #eaeaea;
+  box-shadow: rgba(0, 0, 0, 0.25) 4px 2px 4px 4px;
+}
+.location i {
+  margin-right: 8px;
+}
+.location span {
+  font-weight: 500;
+}
+
+.hero {
+  padding: 40px 20px;
+  text-align: center;
+}
+.hero h2 {
+  font-size: 22px;
+}
+.hero p {
+  margin: 10px 0 20px;
+}
+
+.workflow-section h2 {
+  margin-left: 20px;
+}
+
+.workflow {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  padding: 20px 10px;
+  margin: 0 35px;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 5;
+}
+.workflow span {
+  font-weight: 500;
+}
+
+.number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  background-color: #9356dc;
+  border-radius: 50%;
+  margin-left: 20px;
+  z-index: 10;
+}
+
+.button-primary {
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  border-radius: 25px;
+  padding: 15px 25px;
+  color: #fff;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease transform 0.3s ease;
+}
+.button-primary:hover {
+  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.8);
+  transform: scale(1.03);
 }
 
 /*# sourceMappingURL=style.css.map */
