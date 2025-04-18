@@ -204,41 +204,43 @@ button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
 
-  // .like {
-  //   position: relative;
-  //   cursor: pointer;
-  //   display: inline-block;
-  //   width: 22px;
-  //   height: 22px;
+  .like {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    width: 22px;
+    height: 22px;
 
-  //   input {
-  //     display: none;
-  //   }
+    input {
+      display: none;
+    }
 
-  //   .empty-heart,
-  //   .filled-heart {
-  //     position: absolute;
-  //     top: 0;
-  //     left: 0;
-  //     font-size: 22px;
-  //     transition: opacity 0.3s ease, transform 0.3s ease;
-  //   }
+    .empty-heart,
+    .filled-heart {
+      position: absolute;
+      top: 0;
+      left: 0;
+      font-size: 22px;
+      transition: opacity 0.3s ease, transform 0.3s ease;
+    }
 
-  //   .filled-heart {
-  //     color: $primary-color;
-  //     opacity: 0;
-  //     transform: scale(0.9);
-  //   }
+    .filled-heart {
+      background: linear-gradient(to bottom, $primary-color, $secondary-color);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      opacity: 0;
+      transform: scale(0.9);
+    }
 
-  //   input:checked + .empty-heart {
-  //     opacity: 0;
-  //   }
+    input:checked + .empty-heart {
+      opacity: 0;
+    }
 
-  //   input:checked ~ .filled-heart {
-  //     opacity: 1;
-  //     transform: scale(1.1);
-  //   }
-  // }
+    input:checked ~ .filled-heart {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
 }
 
 .footer {

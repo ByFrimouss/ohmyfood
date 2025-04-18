@@ -164,6 +164,38 @@ button {
   z-index: 10;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
+.restau-cards .like {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+.restau-cards .like input {
+  display: none;
+}
+.restau-cards .like .empty-heart,
+.restau-cards .like .filled-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.restau-cards .like .filled-heart {
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0.9);
+}
+.restau-cards .like input:checked + .empty-heart {
+  opacity: 0;
+}
+.restau-cards .like input:checked ~ .filled-heart {
+  opacity: 1;
+  transform: scale(1.1);
+}
 
 .footer {
   background-color: rgb(55.5, 55.5, 55.5);
@@ -214,7 +246,8 @@ button {
   transition: background 0.3s ease, box-shadow 0.3s ease transform 0.3s ease;
 }
 .button-primary:hover {
-  box-shadow: 4px 6px 12px rgba(0, 0, 0, 0.8);
+  background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
   transform: scale(1.03);
 }
 
