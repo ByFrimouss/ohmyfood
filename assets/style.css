@@ -2,6 +2,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   color: #000;
+  background-color: #f6f6f6;
 }
 
 h1,
@@ -12,6 +13,10 @@ h3 {
 
 h1 {
   font-family: "Shrikhand", cursive;
+}
+
+button {
+  font-family: "Roboto", sans-serif;
 }
 
 .header {
@@ -29,7 +34,7 @@ h1 {
   justify-content: center;
   align-items: center;
   background-color: #eaeaea;
-  box-shadow: rgba(0, 0, 0, 0.25) 4px 2px 4px 4px;
+  box-shadow: 4px 2px 4px 4px rgba(0, 0, 0, 0.25);
 }
 .location i {
   margin-right: 8px;
@@ -49,37 +54,152 @@ h1 {
   margin: 10px 0 20px;
 }
 
+.workflow-section {
+  background-color: #fff;
+  padding: 15px 0;
+}
 .workflow-section h2 {
   margin-left: 20px;
 }
 
 .workflow {
+  position: relative;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
   align-items: center;
-  gap: 10px;
-  background-color: #f6f6f6;
   border-radius: 15px;
   padding: 20px 10px;
-  margin: 0 35px;
+  margin: 20px 35px;
   box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
   z-index: 5;
+}
+.workflow::before {
+  content: attr(data-number);
+  position: absolute;
+  left: -10px;
+  background-color: #9356dc;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  text-align: center;
+  line-height: 24px;
+  color: #fff;
+}
+.workflow i {
+  margin: 0 30px;
+  color: #7e7e7e;
+}
+.workflow .fa-store {
+  color: #9356dc;
 }
 .workflow span {
   font-weight: 500;
 }
 
-.number {
+.restaurants {
+  width: 100%;
+}
+.restaurants h2 {
+  margin-left: 20px;
+}
+.restaurants a {
+  text-decoration: none;
+}
+
+.restau-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin: 30px 20px 0;
+}
+.restau-cards a {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 20px;
+}
+.restau-cards img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.restau-cards .card-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 10px;
+  line-height: 1.3em;
+}
+.restau-cards .card-text {
+  display: flex;
+  flex-direction: column;
+}
+.restau-cards .fa-heart {
+  font-size: 20px;
+  color: #888;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+.restau-cards .fa-heart:hover {
+  color: #9356dc;
+  transform: scale(1.1);
+}
+.restau-cards .card-title,
+.restau-cards .card-subtitle {
+  margin: 4px 0;
+  color: #000;
+}
+.restau-cards .card-size {
+  position: relative;
+}
+.restau-cards .card-new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: #99e2d0;
+  color: rgb(38.7404580153, 136.2595419847, 112.213740458);
+  padding: 6px 12px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 2px;
+  z-index: 10;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.footer {
+  background-color: rgb(55.5, 55.5, 55.5);
+  color: #fff;
+  padding: 30px 20px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .logo-blanche {
+  filter: brightness(0) invert(1);
+  width: 120px;
+}
+.footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer .footer-links li {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 24px;
-  height: 24px;
-  background-color: #9356dc;
-  border-radius: 50%;
-  margin-left: 20px;
-  z-index: 10;
+  gap: 15px;
+}
+.footer .footer-links li i {
+  font-size: 14px;
+}
+.footer .footer-links li .fa-utensils {
+  margin-left: 5px;
+}
+.footer .footer-links li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .button-primary {

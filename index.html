@@ -37,21 +37,114 @@
 
     <section class="workflow-section">
       <h2>Fonctionnement</h2>
-      <p class="number">1</p>
-      <div class="workflow">
+      <div class="workflow" data-number="1">
         <i class="fa-solid fa-mobile-screen-button"></i>
         <span>Choisissez un restaurant</span>
       </div>
-      <p class="number">2</p>
-      <div class="workflow">
+
+      <div class="workflow" data-number="2">
         <i class="fa-solid fa-list-ul"></i>
         <span>Composez votre menu</span>
       </div>
-      <p class="number">3</p>
-      <div class="workflow">
+
+      <div class="workflow" data-number="3">
         <i class="fa-solid fa-store"></i>
         <span>Dégustez au retaurant</span>
       </div>
     </section>
+
+    <section class="restaurants">
+      <h2>Restaurants</h2>
+      <div class="restau-cards">
+        <a href="#" class="card-size">
+          <article>
+            <div class="card-new">Nouveau</div>
+            <img
+              src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+              alt="image d'une assiette garni sur une table vue de profil"
+            />
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">La palette du goût</h3>
+                <p class="card-subtitle">Ménilmontant</p>
+              </div>
+              <!-- <label class="like">
+                <input type="checkbox" /> -->
+              <i class="fa-regular fa-heart empty-heart"></i>
+              <!-- <i class="fa-solid fa-heart filled-heart"></i>
+              </label> -->
+            </div>
+          </article>
+        </a>
+        <a href="#" class="card-size">
+          <article>
+            <div class="card-new">Nouveau</div>
+            <img
+              src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
+              alt="Image d'une assiette garni vue de haut"
+            />
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">La note enchantée</h3>
+                <p class="card-subtitle">Charonne</p>
+              </div>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </article>
+        </a>
+        <a href="#" class="card-size">
+          <article>
+            <img
+              src="assets/images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"
+              alt="Image d'une assiette ronde garni sur une table"
+            />
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">À la française</h3>
+                <p class="card-subtitle">Cité Rouge</p>
+              </div>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </article>
+        </a>
+        <a href="#" class="card-size">
+          <article>
+            <img
+              src="assets/images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"
+              alt="Image d'un plat rectangulaire garni sur une table"
+            />
+            <div class="card-content">
+              <div class="card-txt">
+                <h3 class="card-title">Le délice des sens</h3>
+                <p class="card-subtitle">Folie-Méricourt</p>
+              </div>
+              <i class="fa-regular fa-heart"></i>
+            </div>
+          </article>
+        </a>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-logo">
+        <img
+          src="assets\images\logo\ohmyfood@2x.svg"
+          alt="Logo OhMyFood"
+          class="logo-blanche"
+        />
+      </div>
+      <ul class="footer-links">
+        <li>
+          <i class="fa-solid fa-utensils"></i>
+          <a href="#">Proposer un restaurant</a>
+        </li>
+        <li>
+          <i class="fa-solid fa-handshake-angle"></i>
+          <a href="#">Devenir partenaire</a>
+        </li>
+        <li><a href="#">Mentions légales</a></li>
+        <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+      </ul>
+    </footer>
   </body>
 </html>
