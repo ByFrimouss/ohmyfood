@@ -20,7 +20,7 @@
   <body>
     <header class="header">
       <h1>
-        <img src="assets\images\logo\ohmyfood.png" alt="oh my food logo" />
+        <img src="assets/images/logo/ohmyfood.png" alt="oh my food logo" />
       </h1>
 
       <div class="location">
@@ -37,23 +37,25 @@
 
     <section class="workflow-section">
       <h2>Fonctionnement</h2>
-      <div class="workflow" data-number="1">
-        <i class="fa-solid fa-mobile-screen-button"></i>
-        <span>Choisissez un restaurant</span>
-      </div>
+      <div class="workflow-desktop">
+        <div class="workflow" data-number="1">
+          <i class="fa-solid fa-mobile-screen-button"></i>
+          <span>Choisissez un restaurant</span>
+        </div>
 
-      <div class="workflow" data-number="2">
-        <i class="fa-solid fa-list-ul"></i>
-        <span>Composez votre menu</span>
-      </div>
+        <div class="workflow" data-number="2">
+          <i class="fa-solid fa-list-ul"></i>
+          <span>Composez votre menu</span>
+        </div>
 
-      <div class="workflow" data-number="3">
-        <i class="fa-solid fa-store"></i>
-        <span>Dégustez au retaurant</span>
+        <div class="workflow" data-number="3">
+          <i class="fa-solid fa-store"></i>
+          <span>Dégustez au restaurant</span>
+        </div>
       </div>
     </section>
-
-    <section class="restaurants">
+    <!-- id="restaurant-anchor" -->
+    <section id="restaurant-anchor" class="restaurants">
       <h2>Restaurants</h2>
       <div class="restau-cards">
         <a href="#" class="card-size">
@@ -140,22 +142,26 @@
     <footer class="footer">
       <div class="footer-logo">
         <img
-          src="assets\images\logo\ohmyfood@2x.svg"
+          src="assets/images/logo/ohmyfood@2x.svg"
           alt="Logo OhMyFood"
           class="logo-blanche"
         />
       </div>
       <ul class="footer-links">
-        <li>
-          <i class="fa-solid fa-utensils"></i>
-          <a href="#">Proposer un restaurant</a>
-        </li>
-        <li>
-          <i class="fa-solid fa-handshake-angle"></i>
-          <a href="#">Devenir partenaire</a>
-        </li>
-        <li><a href="#">Mentions légales</a></li>
-        <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+        <div class="links1">
+          <li>
+            <i class="fa-solid fa-utensils"></i>
+            <a href="#">Proposer un restaurant</a>
+          </li>
+          <li>
+            <i class="fa-solid fa-handshake-angle"></i>
+            <a href="#">Devenir partenaire</a>
+          </li>
+        </div>
+        <div class="links2">
+          <li><a href="#">Mentions légales</a></li>
+          <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
+        </div>
       </ul>
     </footer>
   </body>
