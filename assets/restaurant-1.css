@@ -125,10 +125,10 @@ a {
   margin-top: 5px;
 }
 
-.menu-item .checkbox {
+.dish-card .dish-checkbox {
   display: none;
 }
-.menu-item .menu-label {
+.dish-card .dish-label {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
@@ -136,63 +136,57 @@ a {
   border-radius: 15px;
   padding: 0 0 0 15px;
   margin: 12px 0;
-  gap: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   position: relative;
   cursor: pointer;
+  transition: background-color 0.3s ease;
 }
-.menu-item .item-text {
-  flex: 1;
-  overflow: hidden;
+.dish-card .dish-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 15px 0;
+  flex: 1;
+  min-width: 0;
+  transition: all 0.3s ease;
 }
-.menu-item .item-text h4 {
+.dish-card .dish-text h4 {
   margin: 0;
   font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.menu-item .item-text p {
+.dish-card .dish-text p {
   margin: 5px 0 0;
   font-size: 14px;
   color: gray;
   white-space: nowrap;
   overflow: visible;
   text-overflow: unset;
+  padding-right: 0;
   transition: all 0.3s ease;
-  padding-right: -30px;
 }
-.menu-item .item-text .checkbox:checked + .menu-label .item-text p {
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu-item .checkbox:checked + .menu-label .item-text p {
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.menu-item .price-check-wrapper {
+.dish-card .dish-price-wrapper {
   display: flex;
   align-items: center;
+  gap: 10px;
   flex-shrink: 0;
-  min-width: 80px;
+  justify-content: flex-end;
+  min-width: 100px;
   position: relative;
+  transition: all 0.3s ease;
 }
-.menu-item .price-check-wrapper .item-price {
+.dish-card .dish-price-wrapper .dish-price {
   font-weight: bold;
   white-space: nowrap;
   margin-top: 20px;
-  margin-left: auto;
+  margin-right: 15px;
+  position: absolute;
   transition: transform 0.3s ease;
 }
-.menu-item .price-check-wrapper .check-icon {
-  width: 30px;
-  flex-shrink: 0;
+.dish-card .dish-price-wrapper .dish-check-icon {
   background-color: #99e2d0;
   color: white;
   padding: 0 10px;
@@ -205,15 +199,22 @@ a {
   opacity: 0;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
-.menu-item .checkbox:checked + .menu-label {
-  background-color: white;
+.dish-card .dish-checkbox:checked + .dish-text + .dish-price-wrapper .dish-price {
+  transform: translateX(-60px);
 }
-.menu-item .checkbox:checked + .menu-label .price-check-wrapper .item-price {
-  transform: translateX(-30px);
-}
-.menu-item .checkbox:checked + .menu-label .price-check-wrapper .check-icon {
+.dish-card .dish-checkbox:checked + .dish-text + .dish-price-wrapper .dish-check-icon {
   transform: translateX(0);
   opacity: 1;
+  width: 30px;
+}
+.dish-card .dish-checkbox:checked + .dish-text p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 30px;
+}
+.dish-card .dish-checkbox:checked + .dish-text,
+.dish-card .dish-checkbox:checked + .dish-text + .dish-price-wrapper {
+  background-color: white;
 }
 
 .footer {
