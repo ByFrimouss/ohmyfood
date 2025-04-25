@@ -53,6 +53,31 @@ a {
   display: block;
 }
 
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-primary {
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  border-radius: 25px;
+  padding: 20px 60px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 30px 0;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease transform 0.3s ease;
+}
+.button-primary:hover {
+  background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
+  transform: scale(1.03);
+}
+
 .menu-container {
   background-color: white;
   border-radius: 30px 30px 0 0;
@@ -151,14 +176,14 @@ a {
   min-width: 0;
   transition: all 0.3s ease;
 }
-.dish-card .dish-text h4 {
+.dish-card .dish-text strong {
   margin: 0;
   font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
-.dish-card .dish-text p {
+.dish-card .dish-text span {
   margin: 5px 0 0;
   font-size: 14px;
   color: gray;
@@ -208,7 +233,7 @@ a {
   opacity: 1;
   width: 30px;
 }
-.dish-card .dish-checkbox:checked + .dish-text p {
+.dish-card .dish-checkbox:checked + .dish-text span {
   overflow: hidden;
   text-overflow: ellipsis;
   padding-right: 30px;

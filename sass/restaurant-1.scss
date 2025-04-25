@@ -77,6 +77,38 @@ a {
   }
 }
 
+// BOUTON
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-primary {
+  background: linear-gradient(to top, $primary-color, $secondary-color);
+  border-radius: 25px;
+  padding: 20px 60px;
+  color: $white;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 30px 0;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease transform 0.3s ease;
+
+  &:hover {
+    background: linear-gradient(
+      to top,
+      lighten($primary-color, 5%),
+      lighten($secondary-color, 5%)
+    );
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
+    transform: scale(1.03);
+  }
+}
+
 .menu-container {
   background-color: white;
   border-radius: 30px 30px 0 0;
@@ -190,7 +222,7 @@ a {
     min-width: 0;
     transition: all 0.3s ease;
 
-    h4 {
+    strong {
       margin: 0;
       font-size: 16px;
       white-space: nowrap;
@@ -198,7 +230,7 @@ a {
       text-overflow: ellipsis;
     }
 
-    p {
+    span {
       margin: 5px 0 0;
       font-size: 14px;
       color: gray;
@@ -258,7 +290,7 @@ a {
     }
   }
 
-  .dish-checkbox:checked + .dish-text p {
+  .dish-checkbox:checked + .dish-text span {
     overflow: hidden;
     text-overflow: ellipsis;
     padding-right: 30px;

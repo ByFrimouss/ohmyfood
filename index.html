@@ -32,11 +32,12 @@
     <section class="hero">
       <h2>Réservez le menu qui vous convient</h2>
       <p>Découvrez des restaurants d’exception, sélectionnés par nos soins.</p>
-      <a href="#restaurant-anchor">
-        <button href="#restaurant-anchor" class="button-primary">
-          Explorer nos restaurants
-        </button>
-      </a>
+      <button
+        class="button-primary"
+        onclick="window.location.href='#restaurant-anchor'"
+      >
+        Explorer nos restaurants
+      </button>
     </section>
 
     <section class="workflow-section">
@@ -62,8 +63,9 @@
     <section id="restaurant-anchor" class="restaurants">
       <h2>Restaurants</h2>
       <div class="restau-cards">
-        <a href="restaurant-1.html" class="card-size">
-          <article>
+        <article class="card-size">
+          <!-- Lien autour de la carte entière -->
+          <a href="restaurant-1.html" class="card-link">
             <div class="card-new">Nouveau</div>
             <img
               src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
@@ -74,14 +76,16 @@
                 <h3 class="card-title">La palette du goût</h3>
                 <p class="card-subtitle">Ménilmontant</p>
               </div>
-              <label class="like">
-                <input type="checkbox" />
-                <i class="fa-regular fa-heart empty-heart"></i>
-                <i class="fa-solid fa-heart filled-heart"></i>
-              </label>
             </div>
-          </article>
-        </a>
+          </a>
+          <!-- Label contenant la checkbox -->
+          <label class="like">
+            <input type="checkbox" />
+            <i class="fa-regular fa-heart empty-heart"></i>
+            <i class="fa-solid fa-heart filled-heart"></i>
+          </label>
+        </article>
+
         <a href="restaurant-2.html" class="card-size">
           <article>
             <div class="card-new">Nouveau</div>

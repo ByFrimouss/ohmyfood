@@ -192,6 +192,8 @@ button {
 
   .card-size {
     position: relative;
+    display: flex;
+    flex-direction: row;
   }
 
   .card-new {
