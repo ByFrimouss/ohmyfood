@@ -160,7 +160,7 @@ a {
   }
 }
 
-// ITEM DU MENU
+// PLATS DE LA CARTE
 .dish-card {
   .dish-checkbox {
     display: none;
@@ -172,7 +172,6 @@ a {
     justify-content: space-between;
     background-color: $background-grey;
     border-radius: 15px;
-
     padding: 0 0 0 15px;
     margin: 12px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -234,6 +233,7 @@ a {
       background-color: $tertiary-color;
       color: white;
       padding: 0 10px;
+      font-size: 20px;
       height: 100%;
       border-radius: 0 15px 15px 0;
       display: flex;
@@ -245,7 +245,7 @@ a {
     }
   }
 
-  // ✅ Animation au checked
+  // ✅ ANIMATION CHECK
   .dish-checkbox:checked + .dish-text + .dish-price-wrapper {
     .dish-price {
       transform: translateX(-60px);
@@ -274,7 +274,6 @@ a {
   background-color: darken($grey, 70%);
   color: $white;
   padding: 30px 20px;
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -290,7 +289,12 @@ a {
     margin: 0;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    justify-content: space-between;
+
+    ul {
+      padding: 0;
+      margin: 10px 0;
+    }
 
     li {
       display: flex;

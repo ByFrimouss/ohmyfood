@@ -1,8 +1,18 @@
+// Couleurs
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$background-grey: #f6f6f6;
+$text-dark: #000;
+$text-light: #888;
+$white: #fff;
+$grey: #eaeaea;
+$icone-color: #7e7e7e;
+
 .button-primary {
-  background: linear-gradient(to top, $tertiary-color, $secondary-color);
+  background: linear-gradient(to top, $primary-color, $secondary-color);
   border-radius: 25px;
   padding: 15px 25px;
-  margin-top: 80px;
   color: $white;
   text-decoration: none;
   font-weight: bold;

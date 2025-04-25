@@ -251,127 +251,13 @@ a {
   transition: background 0.3s ease, box-shadow 0.3s ease transform 0.3s ease;
 }
 .button-primary:hover {
-  background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
+  background: linear-gradient(
+    to top,
+    rgb(160.5, 107.125, 224.375),
+    rgb(255, 146.5, 225.0410447761)
+  );
   box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
   transform: scale(1.03);
-}
-
-@media screen and (min-width: 768px) and (max-width: 1024px) {
-  .restaurants h2,
-  .workflow-section h2 {
-    margin-left: 85px;
-  }
-  .restau-cards,
-  .workflow {
-    margin: 20px 85px;
-  }
-  .workflow-section {
-    padding-bottom: 50px;
-  }
-  footer,
-  .footer {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-evenly;
-    gap: 20px;
-  }
-}
-@media screen and (min-width: 1024px) and (max-width: 1440px) {
-  .workflow-section h2 {
-    margin: 0 120px;
-  }
-  .workflow-desktop {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 120px;
-    justify-content: space-between;
-  }
-  .workflow {
-    padding: 15px 15px;
-    margin: 20px;
-  }
-  .restaurants h2 {
-    margin: 30px 120px;
-  }
-  .restau-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 30px 120px;
-  }
-  footer,
-  .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .footer .footer-links {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-  }
-  .links1,
-  .links2 {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer .footer-links li {
-    gap: 5px;
-  }
-  .links1 li,
-  .links2 li {
-    margin: 5px;
-  }
-}
-@media screen and (min-width: 1440px) and (max-width: 1920px) {
-  .workflow-section h2 {
-    margin: 0 180px;
-  }
-  .workflow-desktop {
-    display: flex;
-    flex-direction: row;
-    margin: 10px 180px;
-    justify-content: space-between;
-  }
-  .workflow {
-    padding: 15px 35px;
-    margin: 20px;
-  }
-  .restaurants h2 {
-    margin: 30px 180px;
-  }
-  .restau-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 30px 180px;
-  }
-  footer,
-  .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .footer .footer-links {
-    display: flex;
-    flex-direction: row;
-    margin-left: 680px;
-  }
-  .links1,
-  .links2 {
-    display: flex;
-    flex-direction: row;
-  }
-  .footer .footer-links li {
-    gap: 5px;
-  }
-  .links1 li,
-  .links2 li {
-    margin: 5px;
-  }
 }
 
 /*# sourceMappingURL=style.css.map */
