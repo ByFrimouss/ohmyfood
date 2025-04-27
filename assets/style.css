@@ -19,7 +19,7 @@ h1 {
   font-family: "Shrikhand", cursive;
 }
 
-a {
+button {
   font-family: "Roboto", sans-serif;
 }
 
@@ -101,6 +101,7 @@ a {
 
 .restaurants {
   width: 100%;
+  height: 1400px;
 }
 .restaurants h2 {
   margin-left: 20px;
@@ -154,6 +155,8 @@ a {
 }
 .restau-cards .card-size {
   position: relative;
+  display: flex;
+  flex-direction: row;
 }
 .restau-cards .card-new {
   position: absolute;
@@ -205,7 +208,6 @@ a {
   background-color: rgb(55.5, 55.5, 55.5);
   color: #fff;
   padding: 30px 20px;
-  margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 15px;
@@ -220,15 +222,19 @@ a {
   margin: 0;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  justify-content: space-between;
+}
+.footer .footer-links ul {
+  padding: 0;
+  margin: 10px 0;
 }
 .footer .footer-links li {
   display: flex;
   align-items: center;
-  gap: 15px;
 }
 .footer .footer-links li i {
   font-size: 14px;
+  margin-right: 20px;
 }
 .footer .footer-links li .fa-utensils {
   margin-left: 5px;
@@ -251,13 +257,410 @@ a {
   transition: background 0.3s ease, box-shadow 0.3s ease transform 0.3s ease;
 }
 .button-primary:hover {
-  background: linear-gradient(
-    to top,
-    rgb(160.5, 107.125, 224.375),
-    rgb(255, 146.5, 225.0410447761)
-  );
+  background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
   box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
   transform: scale(1.03);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .restaurants h2,
+  .workflow-section h2 {
+    margin-left: 85px;
+  }
+  .restau-cards,
+  .workflow {
+    margin: 20px 85px;
+  }
+  .workflow-section {
+    padding-bottom: 50px;
+  }
+  footer,
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .workflow-section h2 {
+    margin: 0 120px;
+  }
+  .workflow-desktop {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 120px;
+    justify-content: space-between;
+  }
+  .workflow {
+    padding: 15px 15px;
+    margin: 20px;
+  }
+  .restaurants h2 {
+    margin: 30px 120px;
+  }
+  .restau-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 30px 120px;
+  }
+  footer,
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+  }
+  .links1,
+  .links2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .footer-links li {
+    gap: 5px;
+  }
+  .links1 li,
+  .links2 li {
+    margin: 5px;
+  }
+}
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .workflow-section h2 {
+    margin: 0 180px;
+  }
+  .workflow-desktop {
+    display: flex;
+    flex-direction: row;
+    margin: 10px 180px;
+    justify-content: space-between;
+  }
+  .workflow {
+    padding: 15px 35px;
+    margin: 20px;
+  }
+  .restaurants h2 {
+    margin: 30px 180px;
+  }
+  .restau-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 30px 180px;
+  }
+  footer,
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    margin-left: 680px;
+  }
+  .links1,
+  .links2 {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .footer-links li {
+    gap: 5px;
+  }
+  .links1 li,
+  .links2 li {
+    margin: 5px;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  color: #000;
+  background-color: #f6f6f6;
+}
+
+h1,
+h2,
+h3 {
+  font-weight: bold;
+}
+
+h1 {
+  font-family: "Shrikhand", cursive;
+}
+
+a {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0;
+  margin-right: 50px;
+}
+.header .back-button {
+  font-size: 20px;
+  color: #000;
+}
+.header h1 {
+  margin: 0;
+}
+.header h1 img {
+  width: 160px;
+  height: 30px;
+  display: block;
+}
+
+.hero-image {
+  position: relative;
+}
+.hero-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  display: block;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-primary {
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  border-radius: 25px;
+  padding: 20px 60px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 30px 0;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease transform 0.3s ease;
+}
+.button-primary:hover {
+  background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
+  transform: scale(1.03);
+}
+
+.menu-container {
+  background-color: white;
+  border-radius: 30px 30px 0 0;
+  margin-top: -40px;
+  padding: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.like {
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  width: 22px;
+  height: 22px;
+}
+.like input {
+  display: none;
+}
+.like .empty-heart,
+.like .filled-heart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 22px;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.like .filled-heart {
+  background: linear-gradient(to bottom, #9356dc, #ff79da);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  opacity: 0;
+  transform: scale(0.9);
+}
+.like input:checked + .empty-heart {
+  opacity: 0;
+}
+.like input:checked ~ .filled-heart {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-title h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 22px;
+}
+.menu-title i {
+  font-size: 22px;
+  color: #9356dc;
+}
+
+.menu-section {
+  margin-top: 30px;
+}
+.menu-section h3 {
+  font-size: 16px;
+  position: relative;
+}
+.menu-section h3::after {
+  content: "";
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #99e2d0;
+  margin-top: 5px;
+}
+
+.dish-card .dish-checkbox {
+  display: none;
+}
+.dish-card .dish-label {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  background-color: #f6f6f6;
+  border-radius: 15px;
+  padding: 0 0 0 15px;
+  margin: 12px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.dish-card .dish-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15px 0;
+  flex: 1;
+  min-width: 0;
+  transition: all 0.3s ease;
+}
+.dish-card .dish-text strong {
+  margin: 0;
+  font-size: 16px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.dish-card .dish-text span {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: gray;
+  white-space: nowrap;
+  overflow: visible;
+  text-overflow: unset;
+  padding-right: 0;
+  transition: all 0.3s ease;
+}
+.dish-card .dish-price-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  justify-content: flex-end;
+  min-width: 100px;
+  position: relative;
+  transition: all 0.3s ease;
+}
+.dish-card .dish-price-wrapper .dish-price {
+  font-weight: bold;
+  white-space: nowrap;
+  margin-top: 20px;
+  margin-right: 15px;
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+.dish-card .dish-price-wrapper .dish-check-icon {
+  background-color: #99e2d0;
+  color: white;
+  padding: 0 10px;
+  font-size: 20px;
+  height: 100%;
+  border-radius: 0 15px 15px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+.dish-card .dish-checkbox:checked + .dish-text + .dish-price-wrapper .dish-price {
+  transform: translateX(-60px);
+}
+.dish-card .dish-checkbox:checked + .dish-text + .dish-price-wrapper .dish-check-icon {
+  transform: translateX(0);
+  opacity: 1;
+  width: 30px;
+}
+.dish-card .dish-checkbox:checked + .dish-text span {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-right: 30px;
+}
+.dish-card .dish-checkbox:checked + .dish-text,
+.dish-card .dish-checkbox:checked + .dish-text + .dish-price-wrapper {
+  background-color: white;
+}
+
+.footer {
+  background-color: rgb(55.5, 55.5, 55.5);
+  color: #fff;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.footer .logo-blanche {
+  filter: brightness(0) invert(1);
+  width: 120px;
+}
+.footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer .footer-links ul {
+  padding: 0;
+  margin: 10px 0;
+}
+.footer .footer-links li {
+  display: flex;
+  align-items: center;
+}
+.footer .footer-links li i {
+  font-size: 14px;
+}
+.footer .footer-links li .fa-utensils {
+  margin-left: 5px;
+}
+.footer .footer-links li a {
+  color: #fff;
+  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
