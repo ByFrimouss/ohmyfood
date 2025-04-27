@@ -15,34 +15,8 @@ $icone-color: #7e7e7e;
 $font-title: "Shrikhand", cursive;
 $font-text: "Roboto", sans-serif;
 
-// BASE
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: $font-text;
-  margin: 0;
-  color: $text-dark;
-  background-color: $background-grey;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: bold;
-}
-
-h1 {
-  font-family: $font-title;
-}
-
-a {
-  font-family: $font-text;
-}
-
 // HEADER
-.header {
+.header-1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -77,38 +51,7 @@ a {
   }
 }
 
-// BOUTON
-
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.button-primary {
-  background: linear-gradient(to top, $primary-color, $secondary-color);
-  border-radius: 25px;
-  padding: 20px 60px;
-  color: $white;
-  font-size: 16px;
-  text-decoration: none;
-  margin: 30px 0;
-  font-weight: bold;
-  border: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background 0.3s ease, box-shadow 0.3s ease transform 0.3s ease;
-
-  &:hover {
-    background: linear-gradient(
-      to top,
-      lighten($primary-color, 5%),
-      lighten($secondary-color, 5%)
-    );
-    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
-    transform: scale(1.03);
-  }
-}
-
+// CONTAINER
 .menu-container {
   background-color: white;
   border-radius: 30px 30px 0 0;
@@ -116,6 +59,23 @@ a {
   padding: 20px;
   position: relative;
   z-index: 10;
+}
+
+// MENU TITRE
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  h2 {
+    font-family: "Shrikhand", cursive;
+    font-size: 22px;
+  }
+
+  i {
+    font-size: 22px;
+    color: $primary-color;
+  }
 }
 
 // ANIMATION COEUR
@@ -154,22 +114,6 @@ a {
   input:checked ~ .filled-heart {
     opacity: 1;
     transform: scale(1.1);
-  }
-}
-
-.menu-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  h2 {
-    font-family: "Shrikhand", cursive;
-    font-size: 22px;
-  }
-
-  i {
-    font-size: 22px;
-    color: $primary-color;
   }
 }
 
@@ -222,23 +166,24 @@ a {
     min-width: 0;
     transition: all 0.3s ease;
 
+    strong,
+    span {
+      white-space: nowrap;
+      overflow: visible;
+      text-overflow: unset;
+      padding-right: 0;
+      transition: all 0.3s ease;
+    }
+
     strong {
       margin: 0;
-      font-size: 16px;
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
+      font-size: 18px;
     }
 
     span {
       margin: 5px 0 0;
       font-size: 14px;
       color: gray;
-      white-space: nowrap;
-      overflow: visible;
-      text-overflow: unset;
-      padding-right: 0;
-      transition: all 0.3s ease;
     }
   }
 
@@ -290,60 +235,16 @@ a {
     }
   }
 
-  .dish-checkbox:checked + .dish-text span {
+  .dish-checkbox:checked + .dish-text span,
+  .dish-checkbox:checked + .dish-text strong {
     overflow: hidden;
     text-overflow: ellipsis;
+    white-space: nowrap;
     padding-right: 30px;
   }
 
   .dish-checkbox:checked + .dish-text,
   .dish-checkbox:checked + .dish-text + .dish-price-wrapper {
     background-color: lighten($tertiary-color, 30%);
-  }
-}
-
-.footer {
-  background-color: darken($grey, 70%);
-  color: $white;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-
-  .logo-blanche {
-    filter: brightness(0) invert(1);
-    width: 120px;
-  }
-
-  .footer-links {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-
-    ul {
-      padding: 0;
-      margin: 10px 0;
-    }
-
-    li {
-      display: flex;
-      align-items: center;
-
-      i {
-        font-size: 14px;
-      }
-
-      .fa-utensils {
-        margin-left: 5px;
-      }
-
-      a {
-        color: $white;
-        text-decoration: none;
-      }
-    }
   }
 }

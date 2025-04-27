@@ -23,10 +23,10 @@ button {
   font-family: "Roboto", sans-serif;
 }
 
-.header {
+.header-main {
   text-align: center;
 }
-.header h1 img {
+.header-main h1 img {
   width: 160px;
   height: 30px;
 }
@@ -43,8 +43,10 @@ button {
 .location i {
   margin-right: 8px;
 }
-.location span {
+.location p {
   font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  margin: 5px 0;
 }
 
 .hero {
@@ -101,7 +103,7 @@ button {
 
 .restaurants {
   width: 100%;
-  height: 1400px;
+  height: 1200px;
 }
 .restaurants h2 {
   margin-left: 20px;
@@ -116,6 +118,11 @@ button {
   gap: 30px;
   margin: 30px 20px 0;
 }
+.restau-cards .card-size {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
 .restau-cards a {
   width: 100%;
   background-color: #fff;
@@ -123,7 +130,7 @@ button {
 }
 .restau-cards img {
   width: 100%;
-  height: 230px;
+  height: 170px;
   object-fit: cover;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -135,7 +142,7 @@ button {
   padding: 0 15px 10px;
   line-height: 1.3em;
 }
-.restau-cards .card-text {
+.restau-cards .card-txt {
   display: flex;
   flex-direction: column;
 }
@@ -153,11 +160,6 @@ button {
   margin: 4px 0;
   color: #000;
 }
-.restau-cards .card-size {
-  position: relative;
-  display: flex;
-  flex-direction: row;
-}
 .restau-cards .card-new {
   position: absolute;
   top: 15px;
@@ -171,35 +173,36 @@ button {
   z-index: 10;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-.restau-cards .like {
-  position: relative;
+.restau-cards .like1 {
+  position: absolute;
   cursor: pointer;
   display: inline-block;
   width: 22px;
   height: 22px;
+  top: 190px;
+  left: 280px;
+  z-index: 50;
 }
-.restau-cards .like input {
+.restau-cards .like1 input {
   display: none;
 }
-.restau-cards .like .empty-heart,
-.restau-cards .like .filled-heart {
+.restau-cards .like1 .empty-heart,
+.restau-cards .like1 .filled-heart {
   position: absolute;
-  top: 0;
-  left: 0;
   font-size: 22px;
   transition: opacity 0.3s ease, transform 0.3s ease;
 }
-.restau-cards .like .filled-heart {
+.restau-cards .like1 .filled-heart {
   background: linear-gradient(to bottom, #9356dc, #ff79da);
   background-clip: text;
   -webkit-text-fill-color: transparent;
   opacity: 0;
   transform: scale(0.9);
 }
-.restau-cards .like input:checked + .empty-heart {
+.restau-cards .like1 input:checked + .empty-heart {
   opacity: 0;
 }
-.restau-cards .like input:checked ~ .filled-heart {
+.restau-cards .like1 input:checked ~ .filled-heart {
   opacity: 1;
   transform: scale(1.1);
 }
@@ -254,9 +257,34 @@ button {
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: background 0.3s ease, box-shadow 0.3s ease transform 0.3s ease;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
 }
 .button-primary:hover {
+  background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
+  transform: scale(1.03);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-primary-1 {
+  background: linear-gradient(to top, #9356dc, #ff79da);
+  border-radius: 25px;
+  padding: 15px 40px;
+  color: #fff;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 30px 0;
+  font-weight: bold;
+  border: none;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+.button-primary-1:hover {
   background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
   box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
   transform: scale(1.03);
@@ -379,46 +407,21 @@ button {
     margin: 5px;
   }
 }
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Roboto", sans-serif;
-  margin: 0;
-  color: #000;
-  background-color: #f6f6f6;
-}
-
-h1,
-h2,
-h3 {
-  font-weight: bold;
-}
-
-h1 {
-  font-family: "Shrikhand", cursive;
-}
-
-a {
-  font-family: "Roboto", sans-serif;
-}
-
-.header {
+.header-1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
   padding: 20px 0;
   margin-right: 50px;
 }
-.header .back-button {
+.header-1 .back-button {
   font-size: 20px;
   color: #000;
 }
-.header h1 {
+.header-1 h1 {
   margin: 0;
 }
-.header h1 img {
+.header-1 h1 img {
   width: 160px;
   height: 30px;
   display: block;
@@ -434,31 +437,6 @@ a {
   display: block;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-}
-
-.button-primary {
-  background: linear-gradient(to top, #9356dc, #ff79da);
-  border-radius: 25px;
-  padding: 20px 60px;
-  color: #fff;
-  font-size: 16px;
-  text-decoration: none;
-  margin: 30px 0;
-  font-weight: bold;
-  border: none;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background 0.3s ease, box-shadow 0.3s ease transform 0.3s ease;
-}
-.button-primary:hover {
-  background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
-  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
-  transform: scale(1.03);
-}
-
 .menu-container {
   background-color: white;
   border-radius: 30px 30px 0 0;
@@ -466,6 +444,20 @@ a {
   padding: 20px;
   position: relative;
   z-index: 10;
+}
+
+.menu-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-title h2 {
+  font-family: "Shrikhand", cursive;
+  font-size: 22px;
+}
+.menu-title i {
+  font-size: 22px;
+  color: #9356dc;
 }
 
 .like {
@@ -499,20 +491,6 @@ a {
 .like input:checked ~ .filled-heart {
   opacity: 1;
   transform: scale(1.1);
-}
-
-.menu-title {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.menu-title h2 {
-  font-family: "Shrikhand", cursive;
-  font-size: 22px;
-}
-.menu-title i {
-  font-size: 22px;
-  color: #9356dc;
 }
 
 .menu-section {
@@ -557,22 +535,22 @@ a {
   min-width: 0;
   transition: all 0.3s ease;
 }
-.dish-card .dish-text strong {
-  margin: 0;
-  font-size: 16px;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
+.dish-card .dish-text strong,
 .dish-card .dish-text span {
-  margin: 5px 0 0;
-  font-size: 14px;
-  color: gray;
   white-space: nowrap;
   overflow: visible;
   text-overflow: unset;
   padding-right: 0;
   transition: all 0.3s ease;
+}
+.dish-card .dish-text strong {
+  margin: 0;
+  font-size: 18px;
+}
+.dish-card .dish-text span {
+  margin: 5px 0 0;
+  font-size: 14px;
+  color: gray;
 }
 .dish-card .dish-price-wrapper {
   display: flex;
@@ -614,53 +592,16 @@ a {
   opacity: 1;
   width: 30px;
 }
-.dish-card .dish-checkbox:checked + .dish-text span {
+.dish-card .dish-checkbox:checked + .dish-text span,
+.dish-card .dish-checkbox:checked + .dish-text strong {
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
   padding-right: 30px;
 }
 .dish-card .dish-checkbox:checked + .dish-text,
 .dish-card .dish-checkbox:checked + .dish-text + .dish-price-wrapper {
   background-color: white;
-}
-
-.footer {
-  background-color: rgb(55.5, 55.5, 55.5);
-  color: #fff;
-  padding: 30px 20px;
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-.footer .logo-blanche {
-  filter: brightness(0) invert(1);
-  width: 120px;
-}
-.footer .footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-.footer .footer-links ul {
-  padding: 0;
-  margin: 10px 0;
-}
-.footer .footer-links li {
-  display: flex;
-  align-items: center;
-}
-.footer .footer-links li i {
-  font-size: 14px;
-}
-.footer .footer-links li .fa-utensils {
-  margin-left: 5px;
-}
-.footer .footer-links li a {
-  color: #fff;
-  text-decoration: none;
 }
 
 /*# sourceMappingURL=style.css.map */
