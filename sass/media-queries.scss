@@ -42,46 +42,50 @@
     padding: 15px 15px;
     margin: 20px;
   }
+}
 
-  .restaurants h2 {
+.restaurants {
+  height: auto;
+
+  h2 {
     margin: 30px 120px;
   }
+}
 
-  .restau-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    margin: 30px 120px;
-  }
+.restau-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  margin: 30px 120px;
+}
 
-  footer,
-  .footer {
-    display: flex;
-    flex-direction: row-reverse;
-    align-items: center;
-    justify-content: space-evenly;
-  }
+footer,
+.footer {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-evenly;
+}
 
-  .footer .footer-links {
-    display: flex;
-    flex-direction: row;
-    gap: 50px;
-  }
+.footer .footer-links {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
 
-  .links1,
-  .links2 {
-    display: flex;
-    flex-direction: row;
-  }
+.links1,
+.links2 {
+  display: flex;
+  flex-direction: row;
+}
 
-  .footer .footer-links li {
-    gap: 5px;
-  }
+.footer .footer-links li {
+  gap: 5px;
+}
 
-  .links1 li,
-  .links2 li {
-    margin: 5px;
-  }
+.links1 li,
+.links2 li {
+  margin: 5px;
 }
 
 ////////////// VERSION DESKTOP DE 1440px À 1920px /////////////////

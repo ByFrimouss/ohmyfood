@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>OhMyFood</title>
-    <link rel="stylesheet" href="assets/restaurant-2.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -18,7 +18,7 @@
   </head>
 
   <body>
-    <header class="header">
+    <header class="header-1">
       <a href="index.html" class="back-button">
         <i class="fa-solid fa-arrow-left"></i>
       </a>
@@ -29,33 +29,183 @@
 
     <div class="hero-image">
       <img
-        src="assets/images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"
-        alt="Image d'une assiette garni vue de haut"
+        src="assets/images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"
+        alt="image d'une assiette garni sur une table vue de profil"
       />
     </div>
 
     <main class="menu-container">
       <div class="menu-title">
         <h2>La palette du goût</h2>
-        <i class="fa-regular fa-heart"></i>
+        <label class="like">
+          <input type="checkbox" />
+          <i class="fa-regular fa-heart empty-heart"></i>
+          <i class="fa-solid fa-heart filled-heart"></i>
+        </label>
       </div>
 
       <section class="menu-section">
         <h3>ENTRÉES</h3>
-        <div class="menu-item">
-          <div class="item-text">
-            <h4>Fricassée d'escargots</h4>
-            <p>Au piment d’Espelette</p>
-          </div>
-          <span class="item-price">25€</span>
+        <div class="dish-card">
+          <label class="dish-label">
+            <input type="checkbox" class="dish-checkbox" />
+            <span class="dish-text">
+              <strong>Fricassée d'escargots</strong>
+              <span>Au piment d’Espelette</span>
+            </span>
+            <span class="dish-price-wrapper">
+              <span class="dish-price">25€</span>
+              <span class="dish-check-icon">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </span>
+          </label>
         </div>
-        <!-- autres entrées -->
+
+        <div class="dish-card">
+          <label class="dish-label">
+            <input type="checkbox" class="dish-checkbox" />
+            <span class="dish-text">
+              <strong>Foie gras de canard mi-cuit</strong>
+              <span>Et ses copeaux de truffe noire</span>
+            </span>
+            <span class="dish-price-wrapper">
+              <span class="dish-price">35€</span>
+              <span class="dish-check-icon">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </span>
+          </label>
+        </div>
+
+        <div class="dish-card">
+          <label class="dish-label">
+            <input type="checkbox" class="dish-checkbox" />
+            <span class="dish-text">
+              <strong>Œuf au plat</strong>
+              <span>Assaisonné à la truffe sur lit de caviar</span>
+            </span>
+            <span class="dish-price-wrapper">
+              <span class="dish-price">20€</span>
+              <span class="dish-check-icon">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </span>
+          </label>
+        </div>
       </section>
 
       <section class="menu-section">
         <h3>PLATS</h3>
-        <!-- plats ici -->
+        <div class="dish-card">
+          <label class="dish-label">
+            <input type="checkbox" class="dish-checkbox" />
+            <span class="dish-text">
+              <strong>Filet de bœuf aux herbes</strong>
+              <span>Accompagné de sa ribambelle de légumes</span>
+            </span>
+            <span class="dish-price-wrapper">
+              <span class="dish-price">40€</span>
+              <span class="dish-check-icon">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </span>
+          </label>
+        </div>
+
+        <div class="dish-card">
+          <label class="dish-label">
+            <input type="checkbox" class="dish-checkbox" />
+            <span class="dish-text">
+              <strong>Parmentier de queue de bœuf</strong>
+              <span>À la truffe noire sur sa purée de panais</span>
+            </span>
+            <span class="dish-price-wrapper">
+              <span class="dish-price">35€</span>
+              <span class="dish-check-icon">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </span>
+          </label>
+        </div>
+
+        <div class="dish-card">
+          <label class="dish-label">
+            <input type="checkbox" class="dish-checkbox" />
+            <span class="dish-text">
+              <strong>Filet de turbot</strong>
+              <span>Aux agrumes</span>
+            </span>
+            <span class="dish-price-wrapper">
+              <span class="dish-price">44€</span>
+              <span class="dish-check-icon">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </span>
+          </label>
+        </div>
       </section>
+
+      <section class="menu-section">
+        <h3>DESSERTS</h3>
+        <div class="dish-card">
+          <label class="dish-label">
+            <input type="checkbox" class="dish-checkbox" />
+            <span class="dish-text">
+              <strong>Paris-Brest</strong>
+              <span>Revisité</span>
+            </span>
+            <span class="dish-price-wrapper">
+              <span class="dish-price">18€</span>
+              <span class="dish-check-icon">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </span>
+          </label>
+        </div>
+
+        <div class="dish-card">
+          <label class="dish-label">
+            <input type="checkbox" class="dish-checkbox" />
+            <span class="dish-text">
+              <strong>Macaron au chocolat d'exception</strong>
+              <span>Et glace à la vanille de Madagascar</span>
+            </span>
+            <span class="dish-price-wrapper">
+              <span class="dish-price">22€</span>
+              <span class="dish-check-icon">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </span>
+          </label>
+        </div>
+
+        <div class="dish-card">
+          <label class="dish-label">
+            <input type="checkbox" class="dish-checkbox" />
+            <span class="dish-text">
+              <strong>Mousse au chocolat</strong>
+              <span>Au piment d'Espelette et à la truffe noire</span>
+            </span>
+            <span class="dish-price-wrapper">
+              <span class="dish-price">23€</span>
+              <span class="dish-check-icon">
+                <i class="fa-solid fa-circle-check"></i>
+              </span>
+            </span>
+          </label>
+        </div>
+      </section>
+
+      <div class="button-container">
+        <button
+          type="button"
+          class="button-primary-1"
+          onclick="window.location.href='#restaurant-anchor'"
+        >
+          Commander
+        </button>
+      </div>
     </main>
 
     <footer class="footer">
@@ -66,8 +216,8 @@
           class="logo-blanche"
         />
       </div>
-      <ul class="footer-links">
-        <div class="links1">
+      <div class="footer-links">
+        <ul class="links1">
           <li>
             <i class="fa-solid fa-utensils"></i>
             <a href="#">Proposer un restaurant</a>
@@ -76,12 +226,12 @@
             <i class="fa-solid fa-handshake-angle"></i>
             <a href="#">Devenir partenaire</a>
           </li>
-        </div>
-        <div class="links2">
+        </ul>
+        <ul class="links2">
           <li><a href="#">Mentions légales</a></li>
           <li><a href="mailto:contact@ohmyfood.fr">Contact</a></li>
-        </div>
-      </ul>
+        </ul>
+      </div>
     </footer>
   </body>
 </html>
