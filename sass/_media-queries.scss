@@ -1,18 +1,35 @@
+//// DESIGN SYSTEM /////
+
+// Couleurs
+$primary-color: #9356dc;
+$secondary-color: #ff79da;
+$tertiary-color: #99e2d0;
+$background-grey: #f6f6f6;
+$text-dark: #000;
+$text-light: #888;
+$white: #fff;
+$grey: #eaeaea;
+$icone-color: #7e7e7e;
+
+// Typo
+$font-title: "Shrikhand", cursive;
+$font-text: "Roboto", sans-serif;
+
 ////////////// VERSION TABLETTE DE 768px À 1024px /////////////////
 
 @media screen and (min-width: 768px) and (max-width: 1024px) {
+  body {
+    background-color: $white;
+  }
+
   .menu-container {
     margin-inline: 40px; // marge latérale modérée
     padding-inline: 80px; // un peu d’air dedans
   }
 
-  .workflow-section,
-  .restaurants {
-    margin-left: 0 85px;
-
-    h2 {
-      margin-left: 85px;
-    }
+  .workflow-section h2,
+  .restaurants h2 {
+    margin-left: 85px;
   }
 
   .restau-cards,
@@ -36,6 +53,10 @@
 ////////////// VERSION DESKTOP DE 1024px À 1440px /////////////////
 
 @media screen and (min-width: 1024px) and (max-width: 1440px) {
+  body {
+    background-color: $white;
+  }
+
   .menu-container {
     margin-inline: 80px; // plus d'espace à gauche/droite
     padding-inline: 150px; // plus d’espace intérieur
@@ -98,6 +119,10 @@
 ////////////// VERSION DESKTOP DE 1440px À 1920px /////////////////
 
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
+  body {
+    background-color: $white;
+  }
+
   .menu-container {
     margin-inline: 160px; // confort de lecture max
     padding-inline: 200px;
