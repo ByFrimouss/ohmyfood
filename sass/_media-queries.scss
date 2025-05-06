@@ -1,0 +1,172 @@
+////////////// VERSION TABLETTE DE 768px À 1024px /////////////////
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .menu-container {
+    margin-inline: 40px; // marge latérale modérée
+    padding-inline: 80px; // un peu d’air dedans
+  }
+
+  .workflow-section,
+  .restaurants {
+    margin-left: 0 85px;
+
+    h2 {
+      margin-left: 85px;
+    }
+  }
+
+  .restau-cards,
+  .workflow {
+    margin: 20px 85px;
+  }
+
+  .workflow-section {
+    padding-bottom: 50px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 20px;
+  }
+}
+
+////////////// VERSION DESKTOP DE 1024px À 1440px /////////////////
+
+@media screen and (min-width: 1024px) and (max-width: 1440px) {
+  .menu-container {
+    margin-inline: 80px; // plus d'espace à gauche/droite
+    padding-inline: 150px; // plus d’espace intérieur
+  }
+
+  .workflow-section h2 {
+    margin: 0 120px;
+  }
+  .workflow-desktop {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    margin: 0 120px;
+  }
+  .workflow {
+    justify-content: center;
+    padding: 15px 15px;
+    margin: 20px;
+  }
+
+  .restaurants {
+    height: auto;
+
+    h2 {
+      margin: 30px 120px;
+    }
+  }
+
+  .restau-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 30px 120px;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+
+  .footer {
+    .footer-links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 70px;
+    }
+
+    .links1,
+    .links2 {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+}
+
+////////////// VERSION DESKTOP DE 1440px À 1920px /////////////////
+
+@media screen and (min-width: 1440px) and (max-width: 1920px) {
+  .menu-container {
+    margin-inline: 160px; // confort de lecture max
+    padding-inline: 200px;
+  }
+
+  .menu-title {
+    max-width: 100%;
+    justify-content: center;
+    gap: 30px; // espace entre le titre et le cœur
+  }
+
+  .workflow-section h2 {
+    margin: 0 180px;
+  }
+
+  .workflow-desktop {
+    display: flex;
+    flex-direction: row;
+    margin: 0 180px;
+    justify-content: left;
+
+    .workflow {
+      width: 322px;
+      padding: 20px 10px;
+    }
+  }
+
+  .restaurants {
+    height: auto;
+
+    h2 {
+      margin: 30px 180px;
+    }
+  }
+
+  .restau-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin: 30px 180px;
+  }
+
+  .footer {
+    display: flex;
+    gap: 50px;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: end;
+  }
+
+  .footer .footer-links {
+    display: flex;
+    flex-direction: row;
+    left: 85%;
+  }
+
+  .footer {
+    .footer-links {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      gap: 50px;
+    }
+
+    .links1,
+    .links2 {
+      display: flex;
+      flex-direction: row;
+      gap: 20px;
+    }
+  }
+}

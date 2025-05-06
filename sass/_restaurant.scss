@@ -17,15 +17,28 @@ $font-text: "Roboto", sans-serif;
 
 // HEADER
 .header-1 {
+  position: relative;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  padding: 20px 0;
-  margin-right: 50px;
+  justify-content: center;
+  height: 70px;
+  padding: 0 16px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
 
+  // Lien vers la page précédente
   .back-button {
-    font-size: 20px;
-    color: $text-dark;
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #000;
+    font-size: 1.2rem;
+    text-decoration: none;
+
+    i {
+      pointer-events: none;
+    }
   }
 
   h1 {
@@ -35,6 +48,7 @@ $font-text: "Roboto", sans-serif;
       width: 160px;
       height: 30px;
       display: block;
+      margin: 0 auto;
     }
   }
 }
