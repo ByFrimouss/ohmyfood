@@ -22,9 +22,13 @@ $font-text: "Roboto", sans-serif;
     background-color: $white;
   }
 
+  .spinner-container {
+    left: -1%;
+  }
+
   .menu-container {
-    margin-inline: 40px; // marge latérale modérée
-    padding-inline: 80px; // un peu d’air dedans
+    margin-inline: 40px;
+    padding-inline: 80px;
   }
 
   .workflow-section h2,
@@ -47,6 +51,10 @@ $font-text: "Roboto", sans-serif;
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
+
+    &.footer-logo {
+      width: 7.5em;
+    }
   }
 }
 
@@ -57,9 +65,13 @@ $font-text: "Roboto", sans-serif;
     background-color: $white;
   }
 
+  .spinner-container {
+    left: -1%;
+  }
+
   .menu-container {
-    margin-inline: 80px; // plus d'espace à gauche/droite
-    padding-inline: 150px; // plus d’espace intérieur
+    margin-inline: 80px;
+    padding-inline: 150px;
   }
 
   .workflow-section h2 {
@@ -123,15 +135,19 @@ $font-text: "Roboto", sans-serif;
     background-color: $white;
   }
 
+  .spinner-container {
+    left: -1%;
+  }
+
   .menu-container {
-    margin-inline: 160px; // confort de lecture max
+    margin-inline: 160px;
     padding-inline: 200px;
   }
 
   .menu-title {
     max-width: 100%;
     justify-content: center;
-    gap: 30px; // espace entre le titre et le cœur
+    gap: 30px;
   }
 
   .workflow-section h2 {
@@ -163,6 +179,15 @@ $font-text: "Roboto", sans-serif;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     margin: 30px 180px;
+  }
+
+  .dish-label:hover .dish-price {
+    transform: translateX(-60px);
+  }
+
+  .dish-label:hover .dish-check-icon {
+    transform: translateX(0);
+    opacity: 1;
   }
 
   .footer {
