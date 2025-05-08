@@ -129,7 +129,6 @@
   border: 1px solid rgba(255, 255, 255, 0.2);
   align-items: center;
   z-index: 9999;
-  animation: hide-loader 1s ease 3s forwards;
 }
 
 .spinner {
@@ -169,7 +168,7 @@
 .bubble {
   position: absolute;
   border-radius: 50%;
-  background: linear-gradient(173deg, rgb(255, 121, 218) 0%, rgb(214, 108, 219) 39%, rgb(171, 94, 220) 85%, rgb(155, 89, 220) 100%);
+  background: linear-gradient(173deg, #ff79da 0%, rgb(255, 172, 232.0820895522) 20%, #9356dc 50%, #99e2d0 80%, rgb(120, 43.75, 211.25) 100%);
   opacity: 1;
   animation: bubble 1500ms infinite ease-in;
 }
@@ -444,7 +443,7 @@ button {
   display: inline-block;
   width: 22px;
   height: 22px;
-  top: 75%;
+  top: 70%;
   left: 85%;
   z-index: 50;
 }
