@@ -681,6 +681,20 @@ button {
   margin-top: 5px;
 }
 
+.menu-section {
+  opacity: 0;
+  animation: fadeIn 3s ease forwards;
+}
+.menu-section:nth-of-type(1) {
+  animation-delay: 0.3s;
+}
+.menu-section:nth-of-type(2) {
+  animation-delay: 1.2s;
+}
+.menu-section:nth-of-type(3) {
+  animation-delay: 2s;
+}
+
 @keyframes slideInUp {
   from {
     opacity: 0;
@@ -692,13 +706,13 @@ button {
   }
 }
 .menu-section .dish-card:nth-child(2) {
-  animation-delay: 0.1s;
+  animation-delay: 0.2s;
 }
 .menu-section .dish-card:nth-child(3) {
-  animation-delay: 0.4s;
+  animation-delay: 1.2s;
 }
 .menu-section .dish-card:nth-child(4) {
-  animation-delay: 0.8s;
+  animation-delay: 3s;
 }
 
 .dish-card {
