@@ -323,6 +323,7 @@ button {
 }
 .hero p {
   margin: 0 20px 20px;
+  margin-bottom: 50px;
 }
 
 .workflow-section {
@@ -534,7 +535,7 @@ button {
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .button-primary:hover {
   background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
@@ -559,7 +560,7 @@ button {
   border: none;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-  transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 .button-primary-1:hover {
   background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
