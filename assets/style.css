@@ -125,11 +125,11 @@
   justify-content: center;
   backdrop-filter: blur(6px);
   background-color: rgba(255, 255, 255, 0.15);
-  -webkit-backdrop-filter: blur(6px); /* support Safari */
+  -webkit-backdrop-filter: blur(6px);
   border: 1px solid rgba(255, 255, 255, 0.2);
   align-items: center;
   z-index: 9999;
-  animation: hide-loader 1s ease 3s forwards;
+  animation: hide-loader 1s ease 2s forwards;
 }
 
 .spinner {
@@ -682,6 +682,14 @@ button {
   margin-top: 5px;
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
 .menu-section {
   opacity: 0;
 }
@@ -805,8 +813,8 @@ button {
   opacity: 1;
   width: 30px;
 }
-.dish-card .dish-checkbox:checked + .dish-text span,
-.dish-card .dish-checkbox:checked + .dish-text strong {
+.dish-card .dish-checkbox:checked + .dish-text strong,
+.dish-card .dish-checkbox:checked + .dish-text span {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;

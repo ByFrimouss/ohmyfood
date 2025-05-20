@@ -151,6 +151,16 @@ $font-text: "Roboto", sans-serif;
 }
 
 // PLATS DE LA CARTE
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .menu-section {
   opacity: 0;
 
@@ -294,8 +304,8 @@ $font-text: "Roboto", sans-serif;
     }
   }
 
-  .dish-checkbox:checked + .dish-text span,
-  .dish-checkbox:checked + .dish-text strong {
+  .dish-checkbox:checked + .dish-text strong,
+  .dish-checkbox:checked + .dish-text span {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
