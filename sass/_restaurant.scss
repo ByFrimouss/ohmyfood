@@ -311,9 +311,4 @@ $font-text: "Roboto", sans-serif;
     white-space: nowrap;
     padding-right: 30px;
   }
-
-  .dish-checkbox:checked + .dish-text,
-  .dish-checkbox:checked + .dish-text + .dish-price-wrapper {
-    background-color: lighten($tertiary-color, 30%);
-  }
 }
