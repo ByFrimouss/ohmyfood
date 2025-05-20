@@ -539,7 +539,7 @@ button {
 }
 .button-primary:hover {
   background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
-  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.4);
   transform: scale(1.03);
 }
 
@@ -564,7 +564,7 @@ button {
 }
 .button-primary-1:hover {
   background: linear-gradient(to top, rgb(160.5, 107.125, 224.375), rgb(255, 146.5, 225.0410447761));
-  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
+  box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.4);
   transform: scale(1.03);
 }
 
@@ -684,16 +684,18 @@ button {
 
 .menu-section {
   opacity: 0;
-  animation: fadeIn 3s ease forwards;
 }
 .menu-section:nth-of-type(1) {
   animation-delay: 0.3s;
+  animation: fadeIn 3s ease forwards;
 }
 .menu-section:nth-of-type(2) {
   animation-delay: 1.2s;
+  animation: fadeIn 3s ease forwards;
 }
 .menu-section:nth-of-type(3) {
   animation-delay: 2s;
+  animation: fadeIn 3s ease forwards;
 }
 
 @keyframes slideInUp {

@@ -27,7 +27,7 @@ $icone-color: #7e7e7e;
       lighten($primary-color, 5%),
       lighten($secondary-color, 5%)
     );
-    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.4);
     transform: scale(1.03);
   }
 }
@@ -59,7 +59,7 @@ $icone-color: #7e7e7e;
       lighten($primary-color, 5%),
       lighten($secondary-color, 5%)
     );
-    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.8);
+    box-shadow: 4px 8px 15px rgba(0, 0, 0, 0.4);
     transform: scale(1.03);
   }
 }
