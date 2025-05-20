@@ -201,6 +201,8 @@ $cook-delay: $cook-timing / $nb-food;
   background: $bg-bubble;
   opacity: 1;
   animation: bubble $bubble-timing infinite ease-in;
+
+  // GÉNÈRE PLUSIEURS BULLES AVEC DES DÉLAIS DIFFÉRENTS
   @for $i from 1 through $nb-bubble {
     &--#{$i} {
       animation-delay: $bubble-delay * ((0.5) * $i);

@@ -69,7 +69,7 @@ ohmyfood/
 │
 ├── index.html ← Page d'accueil principale
 │
-├── restaurants/ ← Pages individuelles des restaurants
+├── Pages individuelles des restaurants
 │ ├── restaurant-1.html
 │ ├── restaurant-2.html
 │ ├── restaurant-3.html
@@ -88,21 +88,12 @@ ohmyfood/
 │ |── style.css ← Fichier CSS généré à partir de Sass
 │
 ├── sass/ ← Source SASS, organisé façon modulaire
-│ ├── base/
-│ │ ├── \_typography.scss
-│ │ └── \_animations.scss
-│ ├── components/
-│ │ ├── \_buttons.scss
-│ │ ├── \_cards.scss
-│ │ └── \_loader.scss
-│ ├── layout/
-│ │ ├── \_header.scss
-│ │ ├── \_footer.scss
-│ │ └── \_responsive.scss
-│ ├── pages/
-│ │ ├── \_home.scss
-│ │ └── \_restaurant.scss
-│ └── style.scss ← Fichier principal qui importe tous les autres
+│ ├── boutons.scss/
+│ ├── loader.scss/
+│ ├── media-queries.scss/
+│ ├── mobile-first.scss/
+│ ├── restaurant.scss/
+│ └── main.scss ← Fichier principal qui importe tous les autres
 │
 ├── README.md ← Le fichier explicatif de ton projet
 
